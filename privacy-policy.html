@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for AI Translator - Learn how we protect your data and respect your privacy while providing voice, photo, and text translation services.">
+    <title>Privacy Policy - AI Translator: Voice & Photo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #f5f7fa;
+        }
+
+        .top-header {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .top-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: drift 20s linear infinite;
+        }
+
+        @keyframes drift {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .header-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-title {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+
+        .header-subtitle {
+            font-size: 20px;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+
+        nav {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            padding: 20px 0;
+            color: #4a5568;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #4F46E5;
+            border-bottom-color: #4F46E5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .content-section {
+            background: white;
+            margin: 40px auto;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.3;
+        }
+
+        .top-header .header-title {
+            background: none;
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: white;
+            color: white;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 16px;
+            color: #2d3748;
+        }
+
+        p {
+            font-size: 17px;
+            margin-bottom: 18px;
+            color: #4a5568;
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            font-size: 17px;
+            color: #4a5568;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #4F46E5;
+            margin: 30px 0;
+        }
+
+        .update-date {
+            background: #4F46E5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background: #1a202c;
+            color: white;
+            padding: 60px 20px 30px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #a0aec0;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .footer-section a:hover {
+            color: #4F46E5;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #2d3748;
+            color: #718096;
+        }
+
+        strong {
+            color: #2d3748;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 32px;
+            }
+
+            .header-subtitle {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            .content-section {
+                padding: 40px 20px;
+                margin: 20px 10px;
+            }
+
+            .nav-container {
+                gap: 20px;
+            }
+
+            .nav-link {
+                padding: 15px 0;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-header">
+        <div class="header-icon">🔒</div>
+        <h1 class="header-title">Privacy Policy</h1>
+        <p class="header-subtitle">Your privacy is our top priority. Learn how we protect your translation data.</p>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="privacy-policy.html" class="nav-link active">Privacy Policy</a>
+            <a href="terms-of-service.html" class="nav-link">Terms & Conditions</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="content-section">
+            <div class="content-wrapper">
+                <span class="update-date">Last Updated: November 14, 2025</span>
+
+                <h1>AI Translator Privacy Policy</h1>
+                
+                <p>At AI Translator: Voice & Photo, we take your privacy seriously. This Privacy Policy explains how we collect, use, protect, and handle your information when you use our mobile application ("AI Translator," "the App," "our App") on iOS devices. By using AI Translator, you agree to the collection and use of information in accordance with this policy.</p>
+
+                <div class="highlight-box">
+                    <p><strong>Quick Summary:</strong> AI Translator is designed with privacy-first principles. We process translations locally on your device whenever possible. Your conversations, photos, and translations remain private. We do not sell your data to third parties. Offline mode ensures complete privacy with zero data transmission.</p>
+                </div>
+
+                <h2>1. Information We Collect</h2>
+                
+                <h3>1.1 Information You Provide Directly</h3>
+                <p>When you use AI Translator, you may provide certain information directly to us:</p>
+                <ul>
+                    <li><strong>Voice Input:</strong> When you use voice translation features, your voice audio is temporarily processed to convert speech to text and translate it. Voice data is processed locally on your device when using offline mode, or sent to our translation servers for online translation.</li>
+                    <li><strong>Text Input:</strong> Text you type for translation is processed to provide translation results. Translation history is saved locally on your device.</li>
+                    <li><strong>Photo/Camera Input:</strong> When you use the photo translator feature, images you capture or upload are analyzed to extract and translate text. Photos are processed temporarily and are not stored on our servers unless you explicitly save them.</li>
+                    <li><strong>Translation History:</strong> Your translation history is stored locally on your device to provide quick access to past translations. You can delete this history at any time.</li>
+                    <li><strong>Language Preferences:</strong> Your preferred languages and settings are stored to personalize your experience.</li>
+                    <li><strong>Support Communications:</strong> When you contact us at engr.salmankh.77@gmail.com, we collect your email address and the content of your message to provide support.</li>
+                </ul>
+
+                <h3>1.2 Information Collected Automatically</h3>
+                <p>To improve the App's functionality and user experience, we automatically collect certain information:</p>
+                <ul>
+                    <li><strong>Device Information:</strong> We collect device model, iOS version, unique device identifiers, device language settings, and network information.</li>
+                    <li><strong>Usage Data:</strong> We collect information about how you interact with the App, including features used (voice, photo, text translation), language pairs selected, translation frequency, and app performance metrics.</li>
+                    <li><strong>Crash Reports and Diagnostics:</strong> We collect crash reports and error logs to identify and fix technical issues. These reports may include device state information at the time of the crash but do not include your translation content.</li>
+                    <li><strong>Analytics Data:</strong> We use analytics tools to understand app usage patterns, popular features, and areas for improvement. This data is aggregated and anonymized.</li>
+                    <li><strong>Location Data (Optional):</strong> If you grant location permission, we may use your approximate location to suggest relevant languages or improve translation accuracy for location-specific terms. This is entirely optional.</li>
+                </ul>
+
+                <h3>1.3 Permissions We Request</h3>
+                <p>AI Translator requests the following permissions to function properly. You can manage these permissions in your device settings:</p>
+                <ul>
+                    <li><strong>Microphone Permission:</strong> Required for voice translation features. Your voice is converted to text for translation purposes only.</li>
+                    <li><strong>Camera Permission:</strong> Required for photo translator features to capture images of text for translation.</li>
+                    <li><strong>Photo Library Permission:</strong> Required to access and translate text from photos you've already taken.</li>
+                    <li><strong>Speech Recognition:</strong> Required to convert your spoken words into text for translation.</li>
+                    <li><strong>Network Permission:</strong> Required for online translation when offline mode is not enabled.</li>
+                    <li><strong>Notification Permission:</strong> To send you alerts about translation completion, app updates, and optional tips.</li>
+                    <li><strong>Location Permission (Optional):</strong> For location-based language suggestions and improved translation accuracy.</li>
+                </ul>
+
+                <h2>2. How We Use Your Information</h2>
+                
+                <p>We use the collected information for the following purposes:</p>
+
+                <h3>2.1 Core Translation Services</h3>
+                <ul>
+                    <li>Provide voice-to-text and text-to-speech translation services</li>
+                    <li>Perform photo and camera-based text recognition and translation</li>
+                    <li>Deliver real-time face-to-face and side-by-side translation</li>
+                    <li>Enable offline translation using downloaded language packs</li>
+                    <li>Maintain translation history for your convenience</li>
+                    <li>Support keyboard translation across all apps</li>
+                    <li>Provide context-aware AI-powered translations</li>
+                </ul>
+
+                <h3>2.2 App Improvement and Development</h3>
+                <ul>
+                    <li>Analyze usage patterns to improve translation accuracy</li>
+                    <li>Develop new features based on user needs and feedback</li>
+                    <li>Identify and fix bugs, crashes, and performance issues</li>
+                    <li>Optimize AI translation models for better results</li>
+                    <li>Improve speech recognition and text extraction accuracy</li>
+                    <li>Test and implement new translation technologies</li>
+                </ul>
+
+                <h3>2.3 Communication and Support</h3>
+                <ul>
+                    <li>Respond to your support requests and inquiries</li>
+                    <li>Send important updates about the App, including security updates</li>
+                    <li>Provide tips for better translation experiences</li>
+                    <li>Notify you about new features, languages, and improvements</li>
+                </ul>
+
+                <h3>2.4 Security and Fraud Prevention</h3>
+                <ul>
+                    <li>Protect against unauthorized access and security threats</li>
+                    <li>Detect and prevent fraudulent activities and abuse</li>
+                    <li>Enforce our Terms of Service</li>
+                    <li>Comply with legal obligations and law enforcement requests</li>
+                </ul>
+
+                <h2>3. Data Processing and Translation Privacy</h2>
+
+                <h3>3.1 Local Processing (Offline Mode)</h3>
+                <p>AI Translator prioritizes local, on-device processing for maximum privacy:</p>
+                <ul>
+                    <li><strong>Offline Translation:</strong> When you download language packs, all translations occur directly on your device without internet connection. Your voice, text, and photos never leave your device in offline mode.</li>
+                    <li><strong>Translation History:</strong> All translation history is stored locally on your device and never uploaded to our servers.</li>
+                    <li><strong>Voice Processing:</strong> In offline mode, voice recognition and translation happen entirely on your device.</li>
+                    <li><strong>Photo Analysis:</strong> Text extraction from photos is performed locally when using offline language packs.</li>
+                </ul>
+
+                <h3>3.2 Online Processing</h3>
+                <p>When using online translation features (without downloaded language packs):</p>
+                <ul>
+                    <li>Text, voice audio, and photo data are temporarily sent to our secure translation servers</li>
+                    <li>Data is transmitted using encrypted HTTPS connections</li>
+                    <li>Translation requests are processed and immediately deleted after delivery of results</li>
+                    <li>We do not store your translation content on our servers</li>
+                    <li>Voice recordings are converted to text and the audio is immediately discarded</li>
+                </ul>
+
+                <h3>3.3 AI Translation Models</h3>
+                <p>We use advanced AI translation models to provide accurate translations. These models are trained on publicly available multilingual datasets and do not include your personal translation data. Your translations are not used to train or improve our AI models without your explicit consent.</p>
+
+                <h3>3.4 Data Retention</h3>
+                <ul>
+                    <li><strong>Translation Content:</strong> Not stored on our servers. All content is processed transiently and immediately discarded after translation delivery.</li>
+                    <li><strong>Translation History:</strong> Stored locally on your device until you delete it. You have complete control over your history.</li>
+                    <li><strong>Usage Analytics:</strong> Aggregated and anonymized usage data is retained for up to 24 months for improvement purposes.</li>
+                    <li><strong>Crash Reports:</strong> Retained for up to 12 months to identify and fix recurring issues.</li>
+                    <li><strong>Support Communications:</strong> Retained for up to 36 months for customer service purposes.</li>
+                </ul>
+
+                <h2>4. Data Sharing and Disclosure</h2>
+
+                <h3>4.1 We Do Not Sell Your Data</h3>
+                <p>AI Translator does not sell, rent, or trade your personal information or translation data to third parties for marketing purposes. Your privacy is not for sale.</p>
+
+                <h3>4.2 Third-Party Service Providers</h3>
+                <p>We work with trusted third-party service providers who help us operate the App. These providers have access only to the information necessary to perform their functions and are contractually obligated to protect your data:</p>
+                <ul>
+                    <li><strong>Translation API Providers:</strong> For online translation, we may use third-party translation APIs (such as Google Cloud Translation, Microsoft Translator). These providers process translation requests according to their privacy policies.</li>
+                    <li><strong>Speech Recognition Services:</strong> For online voice translation, we may use cloud-based speech recognition services that are compliant with privacy standards.</li>
+                    <li><strong>Analytics Providers:</strong> We use analytics services (such as Firebase Analytics) to understand app usage. These providers collect anonymized usage data.</li>
+                    <li><strong>Crash Reporting Services:</strong> We use crash reporting tools (such as Crashlytics) to identify and fix technical issues.</li>
+                    <li><strong>Cloud Infrastructure:</strong> We use secure cloud infrastructure providers (such as AWS, Google Cloud) to host our translation services.</li>
+                </ul>
+
+                <h3>4.3 Legal Requirements</h3>
+                <p>We may disclose your information if required to do so by law or in response to valid requests by public authorities, including:</p>
+                <ul>
+                    <li>Complying with legal obligations, court orders, or subpoenas</li>
+                    <li>Protecting the rights, property, or safety of AI Translator, our users, or the public</li>
+                    <li>Detecting, preventing, or addressing fraud, security, or technical issues</li>
+                    <li>Enforcing our Terms of Service and other agreements</li>
+                </ul>
+
+                <h3>4.4 Business Transfers</h3>
+                <p>In the event of a merger, acquisition, reorganization, or sale of assets, your information may be transferred to the acquiring entity. We will notify you via email or prominent notice in the App before your information is transferred and becomes subject to a different privacy policy.</p>
+
+                <h2>5. Your Privacy Rights and Choices</h2>
+
+                <h3>5.1 Access and Control</h3>
+                <p>You have the following rights regarding your personal information:</p>
+                <ul>
+                    <li><strong>Access:</strong> Request a copy of the personal information we hold about you</li>
+                    <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
+                    <li><strong>Deletion:</strong> Request deletion of your personal information and account</li>
+                    <li><strong>Data Portability:</strong> Request a copy of your data in a machine-readable format</li>
+                    <li><strong>Objection:</strong> Object to certain types of data processing</li>
+                    <li><strong>Withdraw Consent:</strong> Withdraw previously given consent at any time</li>
+                </ul>
+
+                <p>To exercise these rights, contact us at engr.salmankh.77@gmail.com with your request.</p>
+
+                <h3>5.2 Translation History Management</h3>
+                <p>You have complete control over your translation history:</p>
+                <ul>
+                    <li>Delete individual translations from your history</li>
+                    <li>Clear entire translation history with one tap in App settings</li>
+                    <li>Disable history saving in Settings → Privacy → Translation History</li>
+                    <li>Export your translation history for personal use</li>
+                </ul>
+
+                <h3>5.3 Permission Management</h3>
+                <p>You can manage app permissions at any time through your device settings:</p>
+                <ul>
+                    <li><strong>iOS:</strong> Settings → AI Translator → Permissions or Settings → Privacy</li>
+                </ul>
+
+                <p>Note that disabling certain permissions may limit app functionality. For example, disabling microphone access will prevent voice translation features from working.</p>
+
+                <h3>5.4 Offline Mode for Maximum Privacy</h3>
+                <p>For complete privacy, we recommend using offline mode:</p>
+                <ul>
+                    <li>Download language packs for the languages you need</li>
+                    <li>Enable offline mode in Settings</li>
+                    <li>All translations will occur entirely on your device</li>
+                    <li>Zero data transmission to servers</li>
+                    <li>Complete privacy even without internet connection</li>
+                </ul>
+
+                <h3>5.5 Analytics Opt-Out</h3>
+                <p>You can opt out of analytics tracking in the App settings under Privacy → Analytics. Opting out may limit our ability to improve the App based on usage patterns.</p>
+
+                <h2>6. Children's Privacy</h2>
+
+                <p>AI Translator is not intended for use by children under the age of 13 (or the minimum age in your jurisdiction). We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at engr.salmankh.77@gmail.com, and we will promptly delete such information from our systems.</p>
+
+                <h2>7. International Data Transfers</h2>
+
+                <p>AI Translator is available globally and supports 320+ languages. If you use the App outside your country of residence, your information may be transferred to and processed in countries where our service providers operate. These countries may have different data protection laws than your country of residence.</p>
+
+                <p>When we transfer data internationally, we implement appropriate safeguards, including:</p>
+                <ul>
+                    <li>Standard contractual clauses approved by relevant authorities</li>
+                    <li>Ensuring service providers meet adequate data protection standards</li>
+                    <li>Implementing technical and organizational security measures</li>
+                    <li>Using encryption for all data in transit</li>
+                </ul>
+
+                <h2>8. Data Security Measures</h2>
+
+                <p>We implement comprehensive security measures to protect your information:</p>
+                <ul>
+                    <li><strong>Encryption:</strong> All data transmitted to our servers is encrypted using TLS/SSL protocols</li>
+                    <li><strong>Secure Storage:</strong> Translation history stored locally on your device is protected by iOS security features</li>
+                    <li><strong>Access Controls:</strong> Strict access controls limit employee access to user data</li>
+                    <li><strong>Regular Audits:</strong> We conduct regular security audits and vulnerability assessments</li>
+                    <li><strong>Secure Development:</strong> We follow secure coding practices and conduct security testing</li>
+                    <li><strong>Incident Response:</strong> We have procedures in place to respond to security incidents</li>
+                    <li><strong>Data Minimization:</strong> We collect only the minimum data necessary for app functionality</li>
+                </ul>
+
+                <p>While we strive to protect your information, no security system is impenetrable. We cannot guarantee absolute security of your data.</p>
+
+                <h2>9. California Privacy Rights (CCPA)</h2>
+
+                <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+                <ul>
+                    <li><strong>Right to Know:</strong> Request disclosure of personal information we collect, use, disclose, and sell</li>
+                    <li><strong>Right to Delete:</strong> Request deletion of your personal information</li>
+                    <li><strong>Right to Opt-Out:</strong> Opt out of the sale of personal information (note: we do not sell personal information)</li>
+                    <li><strong>Right to Non-Discrimination:</strong> Not be discriminated against for exercising your privacy rights</li>
+                </ul>
+
+                <p>To exercise these rights, contact us at engr.salmankh.77@gmail.com with "CCPA Request" in the subject line.</p>
+
+                <h2>10. European Privacy Rights (GDPR)</h2>
+
+                <p>If you are in the European Economic Area (EEA), United Kingdom, or Switzerland, you have rights under the General Data Protection Regulation (GDPR):</p>
+                <ul>
+                    <li><strong>Legal Basis for Processing:</strong> We process your data based on consent, contract performance, legal obligations, and legitimate interests</li>
+                    <li><strong>Data Protection Officer:</strong> Contact our privacy team at engr.salmankh.77@gmail.com for data protection inquiries</li>
+                    <li><strong>Right to Lodge a Complaint:</strong> You have the right to lodge a complaint with your local supervisory authority</li>
+                    <li><strong>Data Processing:</strong> We rely on legitimate interests for analytics and app improvement, and your consent for optional features like location services</li>
+                    <li><strong>Data Portability:</strong> You can request your translation history in a portable format</li>
+                </ul>
+
+                <h2>11. Third-Party Links and Services</h2>
+
+                <p>AI Translator may contain links to third-party websites, apps, or services (such as links in translated content). We are not responsible for the privacy practices of these third parties. We encourage you to read the privacy policies of any third-party services you access through our App.</p>
+
+                <h2>12. Changes to This Privacy Policy</h2>
+
+                <p>We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or App features. When we make changes, we will:</p>
+                <ul>
+                    <li>Update the "Last Updated" date at the top of this policy</li>
+                    <li>Notify you through the App or via email for significant changes</li>
+                    <li>Request your consent if required by applicable law</li>
+                </ul>
+
+                <p>We encourage you to review this Privacy Policy periodically. Your continued use of AI Translator after changes are posted constitutes your acceptance of the updated policy.</p>
+
+                <h2>13. Contact Us</h2>
+
+                <p>If you have questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+
+                <div class="highlight-box">
+                    <p><strong>Email:</strong> engr.salmankh.77@gmail.com</p>
+                    <p><strong>Subject Line:</strong> Privacy Inquiry - AI Translator</p>
+                    <p><strong>Response Time:</strong> We aim to respond to all privacy inquiries within 48-72 hours</p>
+                </div>
+
+                <p>For data subject requests (access, deletion, correction), please include:</p>
+                <ul>
+                    <li>Your full name and email address</li>
+                    <li>A detailed description of your request</li>
+                    <li>Device information to help us locate your data</li>
+                </ul>
+
+                <h2>14. Your Privacy Matters</h2>
+
+                <div class="highlight-box">
+                    <p><strong>Our Commitment:</strong> At AI Translator, we are committed to transparency, security, and respecting your privacy rights. We believe in giving you control over your data while providing powerful, accurate translation services. We process most translations locally on your device, give you complete control over translation history, never sell your data, and provide offline mode for complete privacy. Thank you for trusting us to break down language barriers while protecting your privacy.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Translator</h3>
+                    <p>The most advanced voice, photo, and text translator for iOS. Break down language barriers with AI-powered translation in 320+ languages.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: engr.salmankh.77@gmail.com</p>
+                    <p>We respond within 48-72 hours</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Privacy</h3>
+                    <p>Your privacy is our priority</p>
+                    <p>We never sell your data</p>
+                    <p>Offline mode available</p>
+                    <p>Local processing first</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Translator: Voice & Photo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

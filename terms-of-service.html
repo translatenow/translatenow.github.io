@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Service for AI Translator - Read our terms and conditions for using the AI Translator voice and photo translation app.">
+    <title>Terms of Service - AI Translator: Voice & Photo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #f5f7fa;
+        }
+
+        .top-header {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .top-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: drift 20s linear infinite;
+        }
+
+        @keyframes drift {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .header-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-title {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+
+        .header-subtitle {
+            font-size: 20px;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+
+        nav {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            padding: 20px 0;
+            color: #4a5568;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #4F46E5;
+            border-bottom-color: #4F46E5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .content-section {
+            background: white;
+            margin: 40px auto;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.3;
+        }
+
+        .top-header .header-title {
+            background: none;
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: white;
+            color: white;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 16px;
+            color: #2d3748;
+        }
+
+        p {
+            font-size: 17px;
+            margin-bottom: 18px;
+            color: #4a5568;
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            font-size: 17px;
+            color: #4a5568;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #4F46E5;
+            margin: 30px 0;
+        }
+
+        .warning-box {
+            background: rgba(245, 101, 101, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #f56565;
+            margin: 30px 0;
+        }
+
+        .update-date {
+            background: #4F46E5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background: #1a202c;
+            color: white;
+            padding: 60px 20px 30px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #a0aec0;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .footer-section a:hover {
+            color: #4F46E5;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #2d3748;
+            color: #718096;
+        }
+
+        strong {
+            color: #2d3748;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 32px;
+            }
+
+            .header-subtitle {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            .content-section {
+                padding: 40px 20px;
+                margin: 20px 10px;
+            }
+
+            .nav-container {
+                gap: 20px;
+            }
+
+            .nav-link {
+                padding: 15px 0;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-header">
+        <div class="header-icon">📜</div>
+        <h1 class="header-title">Terms of Service</h1>
+        <p class="header-subtitle">Please read these terms carefully before using AI Translator.</p>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+            <a href="terms-of-service.html" class="nav-link active">Terms & Conditions</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="content-section">
+            <div class="content-wrapper">
+                <span class="update-date">Last Updated: November 14, 2025</span>
+
+                <h1>AI Translator Terms of Service</h1>
+                
+                <p>Welcome to AI Translator! These Terms of Service ("Terms," "Agreement") govern your access to and use of the AI Translator: Voice & Photo mobile application ("App," "Service," "AI Translator") provided by AI Translator ("we," "us," "our"). By downloading, installing, accessing, or using AI Translator, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use the App.</p>
+
+                <div class="highlight-box">
+                    <p><strong>Important:</strong> Please read these Terms carefully. They contain important information about your legal rights, remedies, and obligations. By using AI Translator, you acknowledge that you have read and understood these Terms.</p>
+                </div>
+
+                <h2>1. Acceptance of Terms</h2>
+                
+                <p>By downloading, installing, accessing, or using AI Translator on iOS devices, you acknowledge that:</p>
+                <ul>
+                    <li>You have read, understood, and agree to be bound by these Terms</li>
+                    <li>You have read and agree to our Privacy Policy, which is incorporated into these Terms by reference</li>
+                    <li>You are at least 13 years of age (or the minimum age in your jurisdiction)</li>
+                    <li>You have the legal capacity to enter into this binding agreement</li>
+                    <li>If using the App on behalf of an organization, you have authority to bind that organization to these Terms</li>
+                    <li>You will comply with all applicable laws and regulations while using the Service</li>
+                </ul>
+
+                <p>These Terms apply to all users of the App, including free users and premium subscribers.</p>
+
+                <h2>2. Description of Service</h2>
+
+                <p>AI Translator is a mobile translation application that provides comprehensive language translation services across 320+ languages. The App offers the following features and services:</p>
+
+                <h3>2.1 Core Translation Features</h3>
+                <ul>
+                    <li><strong>Voice Translation:</strong> Real-time voice-to-voice translation with automatic language detection</li>
+                    <li><strong>Text Translation:</strong> Instant text translation with context-aware AI processing</li>
+                    <li><strong>Photo Translation:</strong> Camera and photo-based text recognition and translation</li>
+                    <li><strong>Face-to-Face Mode:</strong> Conversational translation interface for natural two-way communication</li>
+                    <li><strong>Side-by-Side Mode:</strong> Collaborative viewing for both conversation participants</li>
+                    <li><strong>Translator Keyboard:</strong> System-wide keyboard for translating in any app</li>
+                    <li><strong>Translation History:</strong> Local storage of past translations for quick access</li>
+                    <li><strong>Offline Translation:</strong> Download language packs for translation without internet connection</li>
+                    <li><strong>Phrasebook:</strong> Collection of essential travel phrases and common expressions</li>
+                </ul>
+
+                <h3>2.2 Premium Features (Subscription Required)</h3>
+                <ul>
+                    <li>Unlimited offline language pack downloads</li>
+                    <li>Advanced AI translation models for improved accuracy</li>
+                    <li>Ad-free experience</li>
+                    <li>Priority customer support</li>
+                    <li>Extended translation history</li>
+                    <li>Document translation with file format preservation</li>
+                    <li>Custom phrasebook creation and management</li>
+                    <li>Audio playback speed control</li>
+                </ul>
+
+                <p>We reserve the right to modify, suspend, or discontinue any feature of the Service at any time, with or without notice. We will make reasonable efforts to notify users of significant changes to core features.</p>
+
+                <h2>3. User Accounts and Registration</h2>
+
+                <h3>3.1 Account Creation</h3>
+                <p>While many features are available without registration, certain premium features require you to create an account. When creating an account, you agree to:</p>
+                <ul>
+                    <li>Provide accurate, current, and complete information</li>
+                    <li>Maintain and promptly update your account information</li>
+                    <li>Keep your account credentials secure and confidential</li>
+                    <li>Notify us immediately of any unauthorized use of your account</li>
+                    <li>Accept responsibility for all activities under your account</li>
+                    <li>Use only one account per person</li>
+                </ul>
+
+                <h3>3.2 Account Security</h3>
+                <p>You are solely responsible for maintaining the confidentiality of your account credentials. You agree to immediately notify us at engr.salmankh.77@gmail.com of any unauthorized access or security breach. We are not liable for any loss or damage arising from your failure to protect your account information.</p>
+
+                <h3>3.3 Account Termination</h3>
+                <p>You may delete your account at any time through the App settings or by contacting us. Upon account deletion:</p>
+                <ul>
+                    <li>Your account information will be permanently deleted within 30 days</li>
+                    <li>Active subscriptions will continue until the end of the billing period</li>
+                    <li>Local data on your device (including translation history) will remain until you uninstall the App</li>
+                    <li>Downloaded language packs will remain on your device</li>
+                </ul>
+
+                <h2>4. User Responsibilities and Acceptable Use</h2>
+
+                <h3>4.1 Permitted Use</h3>
+                <p>You may use AI Translator for personal, educational, or commercial purposes to facilitate communication and language translation. You agree to use the Service in compliance with all applicable laws and regulations.</p>
+
+                <h3>4.2 Prohibited Activities</h3>
+                <p>You agree NOT to:</p>
+                <ul>
+                    <li>Use the App for any illegal, fraudulent, or unauthorized purpose</li>
+                    <li>Attempt to reverse engineer, decompile, or disassemble the App</li>
+                    <li>Remove, circumvent, or disable any security features or protections</li>
+                    <li>Use automated systems (bots, scrapers) to access the Service</li>
+                    <li>Interfere with or disrupt the App's functionality or servers</li>
+                    <li>Upload malicious code, viruses, or harmful content</li>
+                    <li>Violate any applicable laws or third-party rights</li>
+                    <li>Attempt to gain unauthorized access to other users' accounts or data</li>
+                    <li>Use the App to translate or distribute illegal, harmful, or offensive content</li>
+                    <li>Sell, rent, lease, or redistribute the App without authorization</li>
+                    <li>Create derivative works based on the App</li>
+                    <li>Use the App in a manner that could damage our reputation or brand</li>
+                    <li>Bypass geographical or content restrictions</li>
+                    <li>Share your account credentials with others</li>
+                </ul>
+
+                <h3>4.3 Translation Content Responsibility</h3>
+                <p>You are solely responsible for the content you translate using AI Translator. You represent and warrant that:</p>
+                <ul>
+                    <li>You have the right to translate all content you input into the App</li>
+                    <li>Your use of translations does not violate any laws or third-party rights</li>
+                    <li>You will not use translations for harassment, discrimination, or hate speech</li>
+                    <li>You understand that AI translations may contain errors and should not be solely relied upon for critical communications</li>
+                </ul>
+
+                <div class="warning-box">
+                    <p><strong>Translation Accuracy Disclaimer:</strong> AI Translator uses advanced artificial intelligence to provide translations, but no automated translation system is perfect. Translations should not be relied upon for legal, medical, or other critical purposes without verification by a qualified human translator. We are not liable for any consequences arising from translation errors or inaccuracies.</p>
+                </div>
+
+                <h2>5. Subscriptions and Payments</h2>
+
+                <h3>5.1 Premium Subscription</h3>
+                <p>AI Translator offers premium subscriptions with enhanced features. Subscription options include:</p>
+                <ul>
+                    <li>Weekly subscription</li>
+                    <li>Monthly subscription</li>
+                    <li>Annual subscription (discounted rate)</li>
+                    <li>Lifetime purchase (one-time payment)</li>
+                </ul>
+
+                <h3>5.2 Billing and Payment</h3>
+                <p>Subscriptions are billed through your Apple App Store account. By subscribing, you agree that:</p>
+                <ul>
+                    <li>Payment will be charged to your App Store account at confirmation of purchase</li>
+                    <li>Subscriptions automatically renew unless auto-renewal is disabled at least 24 hours before the end of the current period</li>
+                    <li>Your account will be charged for renewal within 24 hours prior to the end of the current period</li>
+                    <li>You can manage subscriptions and disable auto-renewal in your device's App Store settings</li>
+                    <li>Prices are subject to change with advance notice provided before renewal</li>
+                    <li>All prices include applicable taxes where required</li>
+                </ul>
+
+                <h3>5.3 Free Trials</h3>
+                <p>We may offer free trial periods for premium features. Terms for free trials include:</p>
+                <ul>
+                    <li>At the end of the trial period, you will be automatically charged the subscription fee unless you cancel before the trial ends</li>
+                    <li>Trial eligibility is determined at our discretion and is typically limited to one trial per user</li>
+                    <li>To cancel, you must disable auto-renewal in your App Store settings at least 24 hours before the trial ends</li>
+                    <li>We reserve the right to modify or terminate trial offers at any time</li>
+                </ul>
+
+                <h3>5.4 Refund Policy</h3>
+                <p>All purchases are processed through the Apple App Store. Refund requests must be directed to Apple according to their refund policy:</p>
+                <ul>
+                    <li><strong>Apple App Store:</strong> Visit reportaproblem.apple.com or request through your App Store account</li>
+                </ul>
+
+                <p>We do not process refunds directly. In exceptional circumstances, you may contact us at engr.salmankh.77@gmail.com, and we may assist with refund requests on a case-by-case basis, but the final decision rests with Apple.</p>
+
+                <h3>5.5 Cancellation</h3>
+                <p>You may cancel your subscription at any time through your App Store settings. Upon cancellation:</p>
+                <ul>
+                    <li>You will retain premium access until the end of the current billing period</li>
+                    <li>No refund will be provided for the remaining portion of the billing period</li>
+                    <li>Your account will revert to the free version when the subscription expires</li>
+                    <li>Premium features will become unavailable</li>
+                    <li>Downloaded offline language packs will remain accessible</li>
+                </ul>
+
+                <h2>6. Intellectual Property Rights</h2>
+
+                <h3>6.1 Our Intellectual Property</h3>
+                <p>AI Translator, including all content, features, functionality, source code, algorithms, AI models, user interface, graphics, logos, and trademarks, is owned by us and protected by international copyright, trademark, patent, and other intellectual property laws. You acknowledge that:</p>
+                <ul>
+                    <li>The App is licensed to you, not sold</li>
+                    <li>We retain all rights, title, and interest in the App</li>
+                    <li>You do not acquire any ownership rights through use of the App</li>
+                    <li>All trademarks, service marks, and logos are our property or the property of our licensors</li>
+                    <li>The AI translation models and algorithms are proprietary trade secrets</li>
+                </ul>
+
+                <h3>6.2 Limited License</h3>
+                <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to:</p>
+                <ul>
+                    <li>Download and install the App on your personal iOS devices</li>
+                    <li>Use the App for personal, educational, or commercial purposes as described in these Terms</li>
+                    <li>Access and use features in accordance with these Terms and applicable laws</li>
+                </ul>
+
+                <p>This license automatically terminates if you violate these Terms. Upon termination, you must cease all use of the App and delete all copies from your devices.</p>
+
+                <h3>6.3 Your Content and Translations</h3>
+                <p>You retain ownership of all content you input into AI Translator and the translations generated. By using the App, you grant us a limited license to:</p>
+                <ul>
+                    <li>Process your input content to generate translations</li>
+                    <li>Store translation history locally on your device</li>
+                    <li>Use aggregated, anonymized translation data to improve our AI models (with your consent)</li>
+                </ul>
+
+                <p>We do not claim ownership of your content or translations. We will not use your specific translations for any purpose other than providing the Service to you.</p>
+
+                <h3>6.4 Feedback and Suggestions</h3>
+                <p>If you provide feedback, suggestions, or ideas about the App, you grant us a perpetual, irrevocable, worldwide, royalty-free license to use, modify, and incorporate such feedback into our products and services without compensation or attribution to you.</p>
+
+                <h2>7. Translation Accuracy and Limitations</h2>
+
+                <h3>7.1 AI Translation Limitations</h3>
+                <p>You acknowledge and understand that:</p>
+                <ul>
+                    <li>AI Translator uses artificial intelligence and machine learning for translations</li>
+                    <li>Translations may contain errors, inaccuracies, or cultural misunderstandings</li>
+                    <li>Context, idioms, slang, and technical terms may not translate accurately</li>
+                    <li>Different languages have varying levels of translation quality based on available training data</li>
+                    <li>Offline translations may be less accurate than online translations</li>
+                    <li>Voice recognition accuracy depends on audio quality, accents, and background noise</li>
+                    <li>Photo text recognition depends on image quality, lighting, fonts, and text clarity</li>
+                </ul>
+
+                <h3>7.2 No Professional Translation</h3>
+                <p>AI Translator is NOT a substitute for professional human translation services. You should NOT rely on AI Translator for:</p>
+                <ul>
+                    <li>Legal documents, contracts, or agreements</li>
+                    <li>Medical diagnoses, prescriptions, or healthcare communications</li>
+                    <li>Financial transactions or binding commitments</li>
+                    <li>Official government documents or immigration forms</li>
+                    <li>Academic papers or certified translations</li>
+                    <li>Safety-critical communications</li>
+                </ul>
+
+                <p>For important documents and communications, always consult a certified professional translator.</p>
+
+                <h3>7.3 Your Responsibility to Verify</h3>
+                <p>You are responsible for verifying the accuracy of translations before using them for any purpose. We recommend:</p>
+                <ul>
+                    <li>Cross-checking important translations with multiple sources</li>
+                    <li>Having critical translations reviewed by a native speaker</li>
+                    <li>Using context and common sense to identify potential errors</li>
+                    <li>Understanding cultural differences that may affect translation meaning</li>
+                </ul>
+
+                <h2>8. Third-Party Services and Content</h2>
+
+                <h3>8.1 Third-Party Translation APIs</h3>
+                <p>AI Translator may use third-party translation APIs and services to provide online translation functionality. These services are subject to their own terms and privacy policies. We are not responsible for the performance, availability, or policies of third-party services.</p>
+
+                <h3>8.2 Third-Party Links</h3>
+                <p>The App may contain links to third-party websites, apps, or content. We do not control, endorse, or assume responsibility for any third-party content or services. Your use of third-party services is at your own risk and governed by their respective terms and privacy policies.</p>
+
+                <h3>8.3 Language Packs</h3>
+                <p>Offline language packs are provided for your convenience. We do not guarantee:</p>
+                <ul>
+                    <li>Availability of all language pairs for offline use</li>
+                    <li>Equal quality across all offline language packs</li>
+                    <li>Continued availability of any specific language pack</li>
+                    <li>Compatibility with all device models and iOS versions</li>
+                </ul>
+
+                <h2>9. Privacy and Data Protection</h2>
+
+                <p>Your privacy is important to us. Our collection, use, and protection of your personal information is governed by our Privacy Policy, which is incorporated into these Terms by reference. By using AI Translator, you consent to our Privacy Policy.</p>
+
+                <p>Key privacy points:</p>
+                <ul>
+                    <li>Translations are processed locally on your device when using offline mode</li>
+                    <li>Online translations are sent to servers via encrypted connections and not permanently stored</li>
+                    <li>Translation history is saved locally on your device only</li>
+                    <li>We do not sell your personal information or translation data</li>
+                    <li>You can delete your translation history at any time</li>
+                </ul>
+
+                <p>For complete details, please review our Privacy Policy at [privacy-policy.html].</p>
+
+                <h2>10. Disclaimers and Warranties</h2>
+
+                <h3>10.1 "As Is" Provision</h3>
+                <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO:</p>
+                <ul>
+                    <li>Warranties of merchantability, fitness for a particular purpose, and non-infringement</li>
+                    <li>Warranties that the App will be error-free, uninterrupted, or secure</li>
+                    <li>Warranties regarding the accuracy, reliability, or completeness of translations</li>
+                    <li>Warranties that defects will be corrected or that the App will meet your requirements</li>
+                    <li>Warranties that translations will be culturally appropriate or contextually accurate</li>
+                </ul>
+
+                <h3>10.2 Translation Quality Disclaimer</h3>
+                <p>We do not guarantee that AI Translator will:</p>
+                <ul>
+                    <li>Provide accurate translations for all content and languages</li>
+                    <li>Correctly translate idioms, slang, technical terms, or cultural references</li>
+                    <li>Understand context, tone, or nuanced meanings</li>
+                    <li>Work effectively with all accents, dialects, or speech patterns</li>
+                    <li>Recognize text in all fonts, handwriting styles, or image conditions</li>
+                    <li>Be suitable for professional, legal, or medical purposes</li>
+                </ul>
+
+                <h3>10.3 Service Availability</h3>
+                <p>We do not guarantee that:</p>
+                <ul>
+                    <li>The App will be available at all times or in all locations</li>
+                    <li>Online translation features will work without internet connectivity</li>
+                    <li>The App will be compatible with all devices or iOS versions</li>
+                    <li>Features will not be modified, suspended, or discontinued</li>
+                </ul>
+
+                <h2>11. Limitation of Liability</h2>
+
+                <h3>11.1 Liability Limitations</h3>
+                <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL AI TRANSLATOR, ITS AFFILIATES, DIRECTORS, EMPLOYEES, AGENTS, OR LICENSORS BE LIABLE FOR:</p>
+                <ul>
+                    <li>Indirect, incidental, consequential, punitive, or special damages</li>
+                    <li>Lost profits, revenue, data, business opportunities, or goodwill</li>
+                    <li>Translation errors, inaccuracies, or misunderstandings</li>
+                    <li>Damages arising from reliance on translations for important decisions</li>
+                    <li>Communication failures or misunderstandings resulting from translations</li>
+                    <li>Device damage, data loss, or system malfunction</li>
+                    <li>Third-party claims arising from your use of translations</li>
+                    <li>Any damages arising from use or inability to use the App</li>
+                </ul>
+
+                <h3>11.2 Maximum Liability</h3>
+                <p>Our total liability to you for any claims arising from your use of AI Translator shall not exceed the amount you paid to us in the twelve (12) months preceding the claim, or $100 USD, whichever is greater.</p>
+
+                <h3>11.3 Essential Purpose</h3>
+                <p>Some jurisdictions do not allow limitation of liability for certain damages. If your jurisdiction does not allow such limitations, the above limitations may not apply to you, but our liability shall be limited to the fullest extent permitted by applicable law.</p>
+
+                <h2>12. Indemnification</h2>
+
+                <p>You agree to indemnify, defend, and hold harmless AI Translator, its affiliates, officers, directors, employees, agents, and licensors from and against any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising from:</p>
+                <ul>
+                    <li>Your use or misuse of the App</li>
+                    <li>Your violation of these Terms</li>
+                    <li>Your violation of any third-party rights</li>
+                    <li>Your violation of applicable laws or regulations</li>
+                    <li>Content you translate or actions you take based on translations</li>
+                    <li>Your negligent or willful misconduct</li>
+                    <li>Disputes with other users arising from translations or communications</li>
+                </ul>
+
+                <h2>13. Modifications to Terms and Service</h2>
+
+                <h3>13.1 Changes to Terms</h3>
+                <p>We reserve the right to modify these Terms at any time. When we make changes, we will:</p>
+                <ul>
+                    <li>Update the "Last Updated" date at the top of these Terms</li>
+                    <li>Notify you through the App or via email for material changes</li>
+                    <li>Provide reasonable time to review changes before they take effect</li>
+                    <li>Post the updated Terms on our website and in the App</li>
+                </ul>
+
+                <p>Your continued use of AI Translator after changes are posted constitutes acceptance of the updated Terms. If you do not agree to the updated Terms, you must stop using the App and may request account deletion.</p>
+
+                <h3>13.2 Changes to Service</h3>
+                <p>We may modify, suspend, or discontinue any feature of the Service at any time, with or without notice. This includes:</p>
+                <ul>
+                    <li>Adding or removing languages</li>
+                    <li>Modifying translation algorithms or AI models</li>
+                    <li>Changing subscription pricing or features</li>
+                    <li>Discontinuing offline support for certain languages</li>
+                    <li>Adding or removing third-party integrations</li>
+                </ul>
+
+                <p>We are not liable to you or any third party for any modification, suspension, or discontinuation of the Service.</p>
+
+                <h2>14. Termination</h2>
+
+                <h3>14.1 Termination by You</h3>
+                <p>You may terminate these Terms at any time by:</p>
+                <ul>
+                    <li>Uninstalling the App from your device</li>
+                    <li>Deleting your account through App settings</li>
+                    <li>Ceasing all use of the Service</li>
+                    <li>Contacting us at engr.salmankh.77@gmail.com to request account deletion</li>
+                </ul>
+
+                <h3>14.2 Termination by Us</h3>
+                <p>We may suspend or terminate your access to the App immediately, without prior notice or liability, if you:</p>
+                <ul>
+                    <li>Violate these Terms or our policies</li>
+                    <li>Engage in fraudulent, illegal, or abusive activities</li>
+                    <li>Threaten the security or integrity of the Service</li>
+                    <li>Violate the rights of other users or third parties</li>
+                    <li>Fail to pay subscription fees (for premium users)</li>
+                    <li>Attempt to circumvent technical limitations or security measures</li>
+                </ul>
+
+                <h3>14.3 Effects of Termination</h3>
+                <p>Upon termination of your account:</p>
+                <ul>
+                    <li>Your right to use the App immediately ceases</li>
+                    <li>Your account data will be deleted according to our retention policies</li>
+                    <li>You will lose access to premium features (if applicable)</li>
+                    <li>No refunds will be provided for unused subscription periods</li>
+                    <li>Local data on your device will remain until you uninstall the App</li>
+                    <li>Provisions intended to survive termination shall remain in effect</li>
+                </ul>
+
+                <h2>15. Dispute Resolution</h2>
+
+                <h3>15.1 Informal Dispute Resolution</h3>
+                <p>Before filing any legal claim, you agree to contact us at engr.salmankh.77@gmail.com to attempt to resolve the dispute informally. Provide a detailed description of the dispute and your desired resolution. We will attempt to resolve the dispute within 60 days of receiving your notice.</p>
+
+                <h3>15.2 Governing Law</h3>
+                <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction where AI Translator operates, without regard to its conflict of law provisions.</p>
+
+                <h3>15.3 Arbitration</h3>
+                <p>If we cannot resolve a dispute informally, any controversy or claim arising out of or relating to these Terms shall be settled by binding arbitration in accordance with the rules of a recognized arbitration association. The arbitration shall be conducted in English (with translation provided if necessary) and will take place in a neutral location or online as agreed by the parties.</p>
+
+                <h3>15.4 Class Action Waiver</h3>
+                <p>YOU AND AI TRANSLATOR AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING. You agree to waive any right to participate in class action lawsuits or class-wide arbitration.</p>
+
+                <h2>16. General Provisions</h2>
+
+                <h3>16.1 Entire Agreement</h3>
+                <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and AI Translator regarding use of the App and supersede all prior agreements and understandings.</p>
+
+                <h3>16.2 Severability</h3>
+                <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect. The invalid provision shall be replaced with a valid provision that most closely approximates the intent of the original provision.</p>
+
+                <h3>16.3 Waiver</h3>
+                <p>Our failure to enforce any right or provision of these Terms shall not constitute a waiver of that right or provision. Any waiver must be in writing and signed by an authorized representative.</p>
+
+                <h3>16.4 Assignment</h3>
+                <p>You may not assign or transfer these Terms or your rights under these Terms without our prior written consent. We may assign or transfer these Terms or our rights under these Terms without your consent in connection with a merger, acquisition, or sale of assets.</p>
+
+                <h3>16.5 Language</h3>
+                <p>These Terms are written in English. Any translations provided are for convenience only. In case of conflict between the English version and a translated version, the English version shall prevail.</p>
+
+                <h3>16.6 Apple App Store Terms</h3>
+                <p>If you download AI Translator from the Apple App Store, you acknowledge and agree that:</p>
+                <ul>
+                    <li>These Terms are between you and AI Translator, not Apple</li>
+                    <li>Apple has no obligation to provide maintenance or support services</li>
+                    <li>Apple is not responsible for the App or its content</li>
+                    <li>Apple is not responsible for addressing any claims related to the App</li>
+                    <li>Apple is a third-party beneficiary of these Terms and may enforce them</li>
+                    <li>You must comply with all applicable third-party terms when using the App</li>
+                </ul>
+
+                <h2>17. Contact Us</h2>
+
+                <p>If you have questions, concerns, or requests regarding these Terms or the Service, please contact us:</p>
+
+                <div class="highlight-box">
+                    <p><strong>Email:</strong> engr.salmankh.77@gmail.com</p>
+                    <p><strong>Subject Line:</strong> Terms of Service Inquiry - AI Translator</p>
+                    <p><strong>Response Time:</strong> We aim to respond to all inquiries within 48-72 hours</p>
+                </div>
+
+                <p>For support requests, include:</p>
+                <ul>
+                    <li>Your name and email address</li>
+                    <li>A detailed description of your question or issue</li>
+                    <li>Device model and iOS version</li>
+                    <li>App version number (found in App settings)</li>
+                </ul>
+
+                <h2>18. Acknowledgment</h2>
+
+                <div class="highlight-box">
+                    <p><strong>By using AI Translator, you acknowledge that:</strong></p>
+                    <ul>
+                        <li>You have read, understood, and agree to these Terms of Service</li>
+                        <li>You have read and agree to our Privacy Policy</li>
+                        <li>You understand that AI translations may contain errors and should not be relied upon for critical purposes</li>
+                        <li>You are responsible for verifying the accuracy of translations before use</li>
+                        <li>You will use the App in accordance with these Terms and applicable laws</li>
+                    </ul>
+                    <p><strong>Thank you for using AI Translator!</strong> We're committed to helping you break down language barriers and communicate effectively across cultures.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Translator</h3>
+                    <p>The most advanced voice, photo, and text translator for iOS. Break down language barriers with AI-powered translation in 320+ languages.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: engr.salmankh.77@gmail.com</p>
+                    <p>We respond within 48-72 hours</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <p>Your privacy is our priority</p>
+                    <p>Secure translation services</p>
+                    <p>320+ languages supported</p>
+                    <p>Offline mode available</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Translator: Voice & Photo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
